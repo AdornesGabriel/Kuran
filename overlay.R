@@ -24,7 +24,7 @@ plot <- ggplot() +
   geom_hline(yintercept = mag.meanf, colour = 'purple') +
   geom_line(data = starA, aes(x = starA$time/3600, y = starA$mag-cr), colour = 'red', size=0.25) +
   geom_line(data = starB, aes(x = starB$time/3600, y = starB$mag+c), colour = 'blue', size=0.25) +
-  labs(title='overlay', x = 'time (hours)', y = 'magnitude', subtitle = 'skyM_00391 and skyM_00518') +
+  labs(title='overlay', x = 'time (hours)', y = 'magnitude', subtitle = 'star_name1 and star_name2') +
   theme(plot.title = element_text(hjust = 0.5, size = 15),
         axis.text = element_text(size = 10),
         axis.title = element_text(size = 10),
@@ -34,7 +34,7 @@ plot2 <- ggplot() +
   geom_hline(yintercept = mag.meanf, colour = "purple") +
   geom_line(aes(x = smooth_friedman$x, y = smooth_friedman$y-0.08), size = 0.5, colour = "red") +
   geom_line(aes(x = smooth_friedmanB$x, y = smooth_friedmanB$y+c), size = 0.5, colour = 'blue') +
-  labs(title = 'smooth overlay', subtitle = 'skyM_00391 and SkyM_00518',x = 'time (hours)', y = 'magnitude') +
+  labs(title = 'smooth overlay', subtitle = 'star_name1 and star_name2',x = 'time (hours)', y = 'magnitude') +
   theme(plot.title = element_text(hjust = 0.5, size = 15),
         axis.text = element_text(size = 10),
         axis.title = element_text(size = 10),
